@@ -11,9 +11,14 @@ export function Header({setOpenMobileMenu}) {
                     </a>
                     <p className="grid place-content-center">Front-end Developer</p>
                 </div>
-                <button className="w-8 h-8 hover:opacity-70" onClick={setOpenMobileMenu}>
+                <button className="w-8 h-8 hover:opacity-70 md:hidden" onClick={setOpenMobileMenu}>
                     <img className="w-full h-full" src={menuIcon} alt="" srcset="" />
                 </button>
+                <div className="hidden md:flex items-center gap-x-4">
+                    <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300">Resume</button>
+                    <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300">Projects</button>
+                    <button className="hover:text-amber-500 transition-all duration-300">Contact</button>
+                </div>
             </div>
         </header>
     )
