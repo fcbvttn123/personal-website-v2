@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { Header } from './components/header/Header'
 import { MobileMenu } from './components/MobileMenu/MobileMenu'
+import { MainSection } from './components/main/MainSection'
 
 function App() {
   const [openMobileMenu, setOpenMobileMenu] = useState(false)
@@ -13,6 +14,7 @@ function App() {
     <>
       {openMobileMenu && <MobileMenu setOpenMobileMenu={onClickOpenMobileMenu}/>}
       <Header setOpenMobileMenu={onClickOpenMobileMenu} />
+      <MainSection />
     </>
   )
 }
