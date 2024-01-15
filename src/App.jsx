@@ -33,3 +33,5 @@ export default App
   //  Header: Align the role (front-end dev)
 
   //  Header: drop animation when closing the mobile menu
+
+  // Footer: does not take up full height in md screen
