@@ -9,6 +9,32 @@
     }
 }
 
-.drop-animation {
-    animation: drop-animation .3s linear forwards;
+@keyframes move-up-animation {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.move-up-animation {
+    animation: move-up-animation .8s linear forwards;
+}
+
+.move-up-animation-delay-80 {
+    animation: move-up-animation .8s linear forwards;
+    animation-delay: 800ms;
+}
+
+.move-up-animation-delay-90 {
+    animation: move-up-animation .8s linear forwards;
+    animation-delay: 950ms;
+}
+
+.move-up-animation-delay-100 {
+    animation: move-up-animation .8s linear forwards;
+    animation-delay: 1.5s;
 }
