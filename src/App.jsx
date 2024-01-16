@@ -14,12 +14,12 @@ function App() {
 
   // Handle sections displayed Main Section
 
-  let mainSection
-  if(currentMainSection == "mainSection") {
-    mainSection = <MainSection moveToResumeSection={moveToResumeSection}/>
-  } else if(currentMainSection == "resume") {
-    mainSection = <Resume />
-  }
+  let mainSection = <Resume />
+  // if(currentMainSection == "mainSection") {
+  //   mainSection = <MainSection moveToResumeSection={moveToResumeSection}/>
+  // } else if(currentMainSection == "resume") {
+  //   mainSection = <Resume />
+  // }
 
   function moveToResumeSection() {
     setCurrentMainSection("resume")

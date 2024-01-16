@@ -24,6 +24,12 @@
     animation: move-up-animation .8s linear forwards;
 }
 
+.move-up-animation-view {
+    animation: move-up-animation linear forwards;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 25%;
+}
+
 .move-up-animation-delay-80 {
     animation: move-up-animation .8s linear forwards;
     animation-delay: 800ms;
