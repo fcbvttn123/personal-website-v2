@@ -3,7 +3,7 @@ import github from "./images/github.png"
 
 export function Footer() {
     return (
-        <footer className="border-t border-gray-300 py-5 mt-10">
+        <footer className="bg-neutral-100 border-t border-gray-300 py-5 mt-10 opacity-90">
             <div className="w-11/12 mx-auto max-w-screen-2xl md:flex justify-between items-center">
                 <div>
                     <h2 className="font-bold text-lg">Phone</h2>

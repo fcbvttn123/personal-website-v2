@@ -5,7 +5,7 @@ export function Header({setOpenMobileMenu}) {
         <header className="flex items-center py-10">
             <div className="w-11/12 mx-auto max-w-screen-2xl flex items-center justify-between">
                 <div className="flex items-stretch flex-wrap gap-x-3 gap-y-2">
-                    <a className="flex items-center gap-x-3" href="#">
+                    <a className="flex items-center gap-x-3" href="/">
                         <div className="w-9 h-9 bg-amber-600 rounded-full"></div>
                         <p className="text-2xl font-extrabold">David Vu</p>
                     </a>

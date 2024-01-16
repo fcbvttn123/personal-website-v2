@@ -5,7 +5,7 @@ export function MobileMenu({setOpenMobileMenu}) {
     return (
         <div className='bg-neutral-100 fixed inset-0 z-50'>
             <div className="flex flex-col items-center gap-y-8 mt-60">
-                <MobileMenuButton>Resume</MobileMenuButton>
+                <MobileMenuButton btnName="resume">Resume</MobileMenuButton>
                 <MobileMenuButton>Projects</MobileMenuButton>
                 <MobileMenuButton>Contact</MobileMenuButton>
             </div>

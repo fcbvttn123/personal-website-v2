@@ -1,7 +1,17 @@
-export function MobileMenuButton({children}) {
+import { mainSectionContext } from "../../App"
+import {useContext} from "react"
+
+export function MobileMenuButton({children, btnName}) {
+    const {setCurrentMainSection, onClickOpenMobileMenu} = useContext(mainSectionContext)
     return (
-        <button className="text-2xl font-light hover:text-amber-500 transition-all duration-300 drop-animation">
-            {children}
-        </button>
-    )
+      <button
+        onClick={() => {
+            onClickOpenMobileMenu(prev => !prev)
+            setCurrentMainSection(btnName && btnName)
+        }}
+        className="text-2xl font-light hover:text-amber-500 transition-all duration-300 drop-animation"
+      >
+        {children}
+      </button>
+    );
 }
