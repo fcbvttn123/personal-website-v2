@@ -5,6 +5,7 @@ import { MobileMenu } from './components/MobileMenu/MobileMenu'
 import { MainSection } from './components/main/MainSection'
 import { Footer } from './components/footer/Footer'
 import { Resume } from './components/resume/Resume'
+import {Project} from "./components/projects/Project"
 
 export const mainSectionContext = createContext()
 
@@ -16,13 +17,19 @@ function App() {
 
   let mainSection
   if(currentMainSection == "mainSection") {
-    mainSection = <MainSection moveToResumeSection={moveToResumeSection}/>
+    mainSection = <MainSection moveToResumeSection={moveToResumeSection} moveToProjectSection={moveToProjectSection}/>
   } else if(currentMainSection == "resume") {
     mainSection = <Resume />
+  } else if (currentMainSection == "project") {
+    mainSection = <Project />
   }
 
   function moveToResumeSection() {
     setCurrentMainSection("resume")
+  }
+
+  function moveToProjectSection() {
+    setCurrentMainSection("project")
   }
 
   // Open/Close Mobile Menu
@@ -50,10 +57,10 @@ export default App
 
 // Issues
 
-  // Header: Align the role (front-end dev)
-
   // Header: drop animation when closing the mobile menu
 
   // Footer: does not take up full height in md screen
 
   // Structure again the main section
+
+  // Using Context to pass the function setCurrentMainSection down to buttons for moving among main sections

@@ -1,7 +1,7 @@
 import { Circle } from "./Circle";
 import avt from "./images/avt.jpeg"
 
-export function MainSection({moveToResumeSection}) {
+export function MainSection({moveToResumeSection, moveToProjectSection}) {
     return (
         <main className="mt-4">
             <div className="w-11/12 mx-auto max-w-screen-2xl md:max-w-screen-xl md:flex flex-row-reverse items-center justify-center gap-x-10">
@@ -11,7 +11,7 @@ export function MainSection({moveToResumeSection}) {
                     <p className="move-up-animation md:max-w-md">Passionate front-end developer with a keen eye for design and a love for crafting seamless user experiences. Proficient in HTML, Tailwind CSS, JavaScript and React JS, I specialize in turning ideas into visually stunning and interactive websites.</p>
                     <div className="flex items-center justify-between gap-x-4 mt-6 mx-auto md:mx-0 max-w-128">
                         <Circle backgroundColor="bg-amber-600" moveUpAnimation="move-up-animation-delay-80" onClick={moveToResumeSection}>Resume</Circle>
-                        <Circle backgroundColor="bg-red-500" moveUpAnimation="move-up-animation-delay-90">Projects</Circle>
+                        <Circle backgroundColor="bg-red-500" moveUpAnimation="move-up-animation-delay-90" onClick={moveToProjectSection}>Projects</Circle>
                         <Circle backgroundColor="bg-teal-400" moveUpAnimation="move-up-animation-delay-100">Contact</Circle>
                     </div>
                 </div>
