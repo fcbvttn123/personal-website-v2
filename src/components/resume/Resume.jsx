@@ -1,9 +1,10 @@
 export function Resume() {
     return (
       <main className="mt-4">
-        <div className="w-11/12 mx-auto max-w-screen-2xl">
-          <h1 className="text-4xl font-extrabold">Resume</h1>
-          <div className="mt-10">
+          <h1 className="text-4xl font-extrabold w-11/12 mx-auto max-w-screen-2xl">Resume</h1>
+          {/* Work Experience Section */}
+          <div>
+            <div className="w-11/12 mx-auto max-w-screen-2xl mt-10">
             <h3 className="text-2xl font-medium move-up-animation">Work Experience</h3>
             <div className="mt-4 opacity-0 move-up-animation-delay-80">
               <p className="font-thin">01/2023 - 04/2023</p>
@@ -71,8 +72,11 @@ export function Resume() {
                 </div>
               </div>
             </div>
+            </div>
           </div>
-          <div className="mt-10 opacity-0 move-up-animation-view">
+          {/* Skills Section */}
+          <div className="border-t border-gray-300 mt-10 pt-10">
+            <div className="w-11/12 mx-auto max-w-screen-2xl opacity-0 move-up-animation-view">
             <h3 className="text-2xl font-medium">Skills</h3>
             <div className="flex items-start gap-x-2 mt-2">
                 <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
@@ -116,8 +120,33 @@ export function Resume() {
                 Window, macOS, iOS
               </p>
             </div>
+            </div>
           </div>
-        </div>
+          {/* Education Section */}
+          <div className="border-t border-gray-300 mt-10 pt-10">
+            <div className="w-11/12 mx-auto max-w-screen-2xl move-up-animation-view">
+                <h3 className="text-2xl font-medium mb-4">Education</h3>
+                <p className="font-thin">01/2022 - 12/2024</p>
+                <p className="font-bold border-r-4 border-black w-fit pr-2">Software Dev & Network Engineering</p>
+                <p className="font-bold">Advanced Diploma</p>
+                <div className="flex items-start gap-x-2 mt-2">
+                    <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                    <p>Web Development</p>
+                </div>
+                <div className="flex items-start gap-x-2 mt-2">
+                    <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                    <p>Database Design and Implementation</p>
+                </div>
+                <div className="flex items-start gap-x-2 mt-2">
+                    <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                    <p>Mobile Web-based Applications</p>
+                </div>
+                <div className="flex items-start gap-x-2 mt-2">
+                    <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                    <p>Computer and Network Security</p>
+                </div>
+            </div>
+          </div>
       </main>
     );
 }
