@@ -20,6 +20,20 @@
     }
 }
 
+@keyframes bg-change-to-neutral100 {
+    to {
+        background-color: rgb(250 250 250);
+    }
+}
+
+.bg-change-to-neutral100 {
+    animation: bg-change-to-neutral100 .4s linear forwards;
+}
+
+.drop-animation {
+    animation: drop-animation .5s linear forwards;
+}
+
 .move-up-animation {
     animation: move-up-animation .8s linear forwards;
 }

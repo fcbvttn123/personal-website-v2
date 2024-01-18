@@ -9,7 +9,7 @@ export function MobileMenuButton({children, btnName}) {
             onClickOpenMobileMenu(prev => !prev)
             setCurrentMainSection(btnName && btnName)
         }}
-        className="text-2xl font-light hover:text-amber-500 transition-all duration-300 drop-animation"
+        className="text-2xl font-light hover:text-amber-500 drop-animation"
       >
         {children}
       </button>

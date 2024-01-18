@@ -27,7 +27,7 @@ export function Resume() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-4 move-up-animation-view">
+                    <div className="mt-4 opacity-0 move-up-animation-delay-100">
                         <p className="font-thin">09/2023 - 01/2024</p>
                         <p className="text-lg font-medium">Support Technologist</p>
                         <div>

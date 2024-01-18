@@ -3,7 +3,7 @@ import closeIcon from "./images/close.png"
 
 export function MobileMenu({setOpenMobileMenu}) {
     return (
-        <div className='bg-neutral-100 fixed inset-0 z-50'>
+        <div className='bg-change-to-neutral100 fixed inset-0 z-50'>
             <div className="flex flex-col items-center gap-y-8 mt-60">
                 <MobileMenuButton btnName="resume">Resume</MobileMenuButton>
                 <MobileMenuButton>Projects</MobileMenuButton>
