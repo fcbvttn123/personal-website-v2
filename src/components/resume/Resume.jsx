@@ -8,39 +8,39 @@ export function Resume() {
                 <h3 className="text-2xl font-medium move-up-animation w-1/4">Work Experience</h3>
                 <div className="2xl:ml-72">
                     <div className="mt-4 lg:mt-0 opacity-0 move-up-animation-delay-80">
-                    <p className="font-thin">01/2023 - 04/2023</p>
-                    <p className="text-lg font-medium">Technical Analyst</p>
-                    <div>
-                        <div className="flex items-start gap-x-2 mt-2">
-                        <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
-                        <p>
-                            Effective communication in order to train on the use of
-                            tools and resolve technical issues
-                        </p>
+                        <p className="font-thin">01/2023 - 04/2023</p>
+                        <p className="text-lg font-medium">Technical Analyst</p>
+                        <div>
+                            <div className="flex items-start gap-x-2 mt-2">
+                            <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                            <p>
+                                Effective communication in order to train on the use of
+                                tools and resolve technical issues
+                            </p>
+                            </div>
+                            <div className="flex items-start gap-x-2 mt-2">
+                            <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                            <p>
+                                Supporting creation of I&IT architecture artifacts based on
+                                Ontario Public Service
+                            </p>
+                            </div>
+                            <div className="flex items-start gap-x-2 mt-2">
+                            <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                            <p>
+                                Participating in IT security activities: security
+                                assessments, development and management of security
+                                deliverables
+                            </p>
+                            </div>
+                            <div className="flex items-start gap-x-2 mt-2">
+                            <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
+                            <p>
+                                Providing technical support in the maintenance and
+                                development of SharePoint repositories
+                            </p>
+                            </div>
                         </div>
-                        <div className="flex items-start gap-x-2 mt-2">
-                        <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
-                        <p>
-                            Supporting creation of I&IT architecture artifacts based on
-                            Ontario Public Service
-                        </p>
-                        </div>
-                        <div className="flex items-start gap-x-2 mt-2">
-                        <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
-                        <p>
-                            Participating in IT security activities: security
-                            assessments, development and management of security
-                            deliverables
-                        </p>
-                        </div>
-                        <div className="flex items-start gap-x-2 mt-2">
-                        <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
-                        <p>
-                            Providing technical support in the maintenance and
-                            development of SharePoint repositories
-                        </p>
-                        </div>
-                    </div>
                     </div>
                     <div className="mt-4 lg:mt-8 opacity-0 move-up-animation-delay-100">
                     <p className="font-thin">09/2023 - 01/2024</p>
