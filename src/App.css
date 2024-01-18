@@ -41,7 +41,7 @@
 .move-up-animation-view {
     animation: move-up-animation linear forwards;
     animation-timeline: view(block);
-    animation-range: cover 0% cover 25%;
+    animation-range: cover 0% cover 35%;
 }
 
 .move-up-animation-delay-80 {

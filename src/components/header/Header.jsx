@@ -1,6 +1,9 @@
 import menuIcon from "./images/hamburger-icon.png"
+import { useContext } from "react"
+import { mainSectionContext } from "../../App"
 
 export function Header({setOpenMobileMenu}) {
+    const {setCurrentMainSection} = useContext(mainSectionContext)
     return (
         <header className="flex items-center py-10">
             <div className="w-11/12 mx-auto max-w-screen-2xl flex items-center justify-between">
@@ -15,7 +18,7 @@ export function Header({setOpenMobileMenu}) {
                     <img className="w-full h-full" src={menuIcon} alt="" srcSet="" />
                 </button>
                 <div className="hidden md:flex items-center gap-x-4">
-                    <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300">Resume</button>
+                    <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300" onClick={() => setCurrentMainSection("resume")}>Resume</button>
                     <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300">Projects</button>
                     <button className="hover:text-amber-500 transition-all duration-300">Contact</button>
                 </div>
