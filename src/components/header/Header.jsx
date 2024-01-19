@@ -19,7 +19,7 @@ export function Header({setOpenMobileMenu}) {
                 </button>
                 <div className="hidden md:flex items-center gap-x-4">
                     <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300" onClick={() => setCurrentMainSection("resume")}>Resume</button>
-                    <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300">Projects</button>
+                    <button className="border-r border-black pr-4 hover:text-amber-500 transition-all duration-300" onClick={() => setCurrentMainSection("project")}>Projects</button>
                     <button className="hover:text-amber-500 transition-all duration-300">Contact</button>
                 </div>
             </div>
