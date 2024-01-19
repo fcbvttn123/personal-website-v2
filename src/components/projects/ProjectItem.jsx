@@ -1,17 +1,17 @@
 const IMAGE_URL = "/src/projects-images/"
-import {projectsArr} from "./projects"
+import { BulletPoint } from "../BulletPoint"
 
-export function ProjectItem() {
+export function ProjectItem({imgName, projectName, projectDesc, url, itemIndex}) {
+    let animation = itemIndex > 1 ? "move-up-animation-view" : "move-up-animation"
     return (
+      <a href={url} className={`block mt-7 move-up-animation ${animation}`}>
+        <h1 className="text-3xl font-bold">{projectName}</h1>
+        <img className="my-5 object-cover" src={IMAGE_URL + imgName} />
         <div>
-            <img src={`${IMAGE_URL}chat-app.png`}alt="" srcSet="" />
-            <h1>React Chat App</h1>
-            <div>
-                <div className="flex items-start gap-x-2 mt-2">
-                    <div className="w-2 h-2 rounded-full bg-black shrink-0 relative top-2"></div>
-                    <p> Effective communication in order to train on the use of tools and resolve technical issues </p>
-                </div>
-            </div>
+          {projectDesc.map((desc, index) => (
+            <BulletPoint key={index}>{desc}</BulletPoint>
+          ))}
         </div>
-    )
+      </a>
+    );
 }

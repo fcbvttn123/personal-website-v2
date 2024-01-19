@@ -15,14 +15,14 @@ function App() {
 
   // Handle sections displayed Main Section
 
-  let mainSection = <Project />
-  // if(currentMainSection == "mainSection") {
-  //   mainSection = <MainSection moveToResumeSection={moveToResumeSection} moveToProjectSection={moveToProjectSection}/>
-  // } else if(currentMainSection == "resume") {
-  //   mainSection = <Resume />
-  // } else if (currentMainSection == "project") {
-  //   mainSection = <Project />
-  // }
+  let mainSection
+  if(currentMainSection == "mainSection") {
+    mainSection = <MainSection moveToResumeSection={moveToResumeSection} moveToProjectSection={moveToProjectSection}/>
+  } else if(currentMainSection == "resume") {
+    mainSection = <Resume />
+  } else if (currentMainSection == "project") {
+    mainSection = <Project />
+  }
 
   function moveToResumeSection() {
     setCurrentMainSection("resume")
