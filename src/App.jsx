@@ -6,6 +6,7 @@ import { MainSection } from './components/main/MainSection'
 import { Footer } from './components/footer/Footer'
 import { Resume } from './components/resume/Resume'
 import {Project} from "./components/projects/Project"
+import { Contact } from './components/contact/Contact'
 
 export const mainSectionContext = createContext()
 
@@ -17,11 +18,13 @@ function App() {
 
   let mainSection
   if(currentMainSection == "mainSection") {
-    mainSection = <MainSection moveToResumeSection={moveToResumeSection} moveToProjectSection={moveToProjectSection}/>
+    mainSection = <MainSection moveToResumeSection={moveToResumeSection} moveToProjectSection={moveToProjectSection} moveToContactSection={moveToContactSection}/>
   } else if(currentMainSection == "resume") {
     mainSection = <Resume />
   } else if (currentMainSection == "project") {
     mainSection = <Project />
+  } else if (currentMainSection == "contact") {
+    mainSection = <Contact />
   }
 
   function moveToResumeSection() {
@@ -30,6 +33,10 @@ function App() {
 
   function moveToProjectSection() {
     setCurrentMainSection("project")
+  }
+
+  function moveToContactSection() {
+    setCurrentMainSection("contact")
   }
 
   // Open/Close Mobile Menu

@@ -1,7 +1,7 @@
 import { Circle } from "./Circle";
 import avt from "./images/avt.jpeg"
 
-export function MainSection({moveToResumeSection, moveToProjectSection}) {
+export function MainSection({moveToResumeSection, moveToProjectSection, moveToContactSection}) {
     return (
         <main className="mt-4">
             <div className="w-11/12 mx-auto max-w-screen-2xl md:max-w-screen-xl md:flex flex-row-reverse items-center justify-center gap-x-10">
@@ -12,7 +12,7 @@ export function MainSection({moveToResumeSection, moveToProjectSection}) {
                     <div className="flex items-center justify-between gap-x-4 mt-6 mx-auto md:mx-0 max-w-128">
                         <Circle backgroundColor="bg-amber-600" moveUpAnimation="move-up-animation-delay-80" onClick={moveToResumeSection}>Resume</Circle>
                         <Circle backgroundColor="bg-red-500" moveUpAnimation="move-up-animation-delay-90" onClick={moveToProjectSection}>Projects</Circle>
-                        <Circle backgroundColor="bg-teal-400" moveUpAnimation="move-up-animation-delay-100">Contact</Circle>
+                        <Circle backgroundColor="bg-teal-400" moveUpAnimation="move-up-animation-delay-100" onClick={moveToContactSection}>Contact</Circle>
                     </div>
                 </div>
                 <div className="move-up-animation overflow-hidden rounded-full border border-zinc-200 mt-6 md:mt-0 mx-auto max-w-96 md:max-w-none flex-1">
