@@ -1,4 +1,14 @@
+import { useState } from "react"
+
 export function ContactForm() {
+    let [emailBorderColor, setEmailBorderColor] = useState("border-black")
+    function checkEmailValidity(e) {
+        if(!e.target.checkValidity() || e.target.value == "") {
+            setEmailBorderColor('border-red-500 border-2')
+        } else {
+            setEmailBorderColor("border-black")
+        }
+    }
     return (
         <form className="mt-7 move-up-animation sm:mt-0 md:flex md:flex-1 md:flex-wrap" action="#">
             <div className="flex flex-col gap-y-1 mb-2 md:w-2/4 md:pr-2">
@@ -11,7 +21,7 @@ export function ContactForm() {
             </div>
             <div className="flex flex-col gap-y-1 mb-2 md:w-2/4 md:pr-2">
                 <label htmlFor="email" className="text-lg">Email</label>
-                <input type="text" name="email" id="email" className="border hover:border-2 border-black bg-transparent h-12 pl-2"/>
+                <input onBlur={(e) => checkEmailValidity(e)} type="email" name="email" id="email" className={`border hover:border-2 ${emailBorderColor} bg-transparent h-12 pl-2`}/>
             </div>
             <div className="flex flex-col gap-y-1 mb-2 md:w-2/4 md:pl-2">
                 <label htmlFor="subject" className="text-lg">Subject</label>
