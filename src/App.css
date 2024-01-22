@@ -100,3 +100,24 @@
         left: 110%;
     }
 }
+
+/* .word-typing-animation {
+    width: fit-content;
+}
+
+.word-typing-animation::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-left: 10px solid black;
+    position: absolute;
+    left: 100%;
+    background-color: rgb(245 245 245);
+    animation: word-typing-animation 2s ease infinite alternate;
+}
+
+@keyframes word-typing-animation {
+    100% {
+        left: 110%;
+    }
+} */

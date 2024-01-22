@@ -9,7 +9,6 @@ let greetingWords = [
 let arrIndex = 1
 
 export function Heading() {
-
     const h1 = useRef(greetingWords[0])
     setInterval(() => {
         if(arrIndex >= (greetingWords.length - 1)) arrIndex = 0
@@ -17,7 +16,7 @@ export function Heading() {
         arrIndex = arrIndex + 1
     }, 4000);
     return (
-        <h1 ref={h1} className="move-up-animation text-5xl sm:text-6xl lg:7xl font-semibold relative word-typing-animation">
+        <h1 ref={h1} className="move-up-animation text-5xl sm:text-6xl md:text-4xl md:font-extrabold lg:text-6xl lg:font-semibold font-semibold relative word-typing-animation">
             Hello
         </h1>
     )
