@@ -71,3 +71,5 @@ export default App
   // Animation for Project section 
 
   // Desc for projects
+
+  // H1 component: js logic is wrong
