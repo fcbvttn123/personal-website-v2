@@ -68,10 +68,8 @@ export default App
 
   // Footer: does not take up full height in md screen
 
-  // Structure again the main section
-
-  // Using Context to pass the function setCurrentMainSection down to buttons for moving among main sections
-
   // Animation for Project section 
 
   // Desc for projects
+
+  // H1 component: js logic is wrong
