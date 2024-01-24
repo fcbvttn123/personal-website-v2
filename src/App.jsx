@@ -76,8 +76,6 @@ export default App
 
   // Footer
 
-  // Image 
-
   // Chat App
 
   // Desc
