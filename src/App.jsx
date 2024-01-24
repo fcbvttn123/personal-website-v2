@@ -73,3 +73,11 @@ export default App
   // Desc for projects
 
   // H1 component: js logic is wrong
+
+  // Footer
+
+  // Image 
+
+  // Chat App
+
+  // Desc

@@ -1,4 +1,3 @@
-const IMAGE_URL = "/src/projects-images/"
 import { BulletPoint } from "../BulletPoint"
 
 export function ProjectItem({imgName, projectName, projectDesc, url, itemIndex}) {
@@ -7,7 +6,7 @@ export function ProjectItem({imgName, projectName, projectDesc, url, itemIndex})
       <>
         <a href={url} className={`block mt-7 move-up-animation lg:hidden parent ${animation}`}>
           <h1 className="text-3xl font-bold">{projectName}</h1>
-          <img className="my-5 object-cover transition-all duration-200 child-scaled-up" src={IMAGE_URL + imgName} />
+          <img className="my-5 object-cover transition-all duration-200 child-scaled-up" src={`./projects-images/${imgName}`} />
           <div>
             {projectDesc.map((desc, index) => (
               <BulletPoint key={index}>{desc}</BulletPoint>
@@ -25,7 +24,7 @@ export function ProjectItem({imgName, projectName, projectDesc, url, itemIndex})
             </div>
           </div>
           <div className="flex-1">
-            <img className="my-0 object-cover w-full h-full" src={IMAGE_URL + imgName} />
+            <img className="my-0 object-cover w-full h-full" src={`./projects-images/${imgName}`} />
           </div>
         </a>
       </>
